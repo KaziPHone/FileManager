@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 
 namespace FileManager
 {
@@ -7,7 +6,9 @@ namespace FileManager
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ConsoleUi ui = new ConsoleUi();
+            ui.CreateWindow();
+            Console.ReadKey();
         }
     }
 }
